@@ -1,3 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100&display=swap');
+
+body {
+    background-color: #046982;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid-item-1 { grid-area: header; }
+.grid-item-2 { grid-area: menu; }
+.grid-item-3 { grid-area: main; }
+.grid-item-4 { grid-area: right; }
+.grid-item-5 { grid-area: footer; }
+
+.wrapper {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    background-color: white;
+    border: 5px black solid;
+    grid-template-rows: 80px 500px;
+}
+
+.grid-item-1, .grid-item-2, .grid-item-3, .grid-item-4, .grid-item-5 {
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
 ul {
-    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#004063;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
 }
