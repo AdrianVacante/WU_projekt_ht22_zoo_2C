@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 body {
-    background-color: #046982;
+    background-color: white;
 }
 
 h1 {
@@ -22,13 +23,14 @@ h1 {
     'header header header header header header'
     'menu main main main right right'
     'menu footer footer footer footer footer';
-    background-color: white;
-    border: 5px black solid;
+    background-color: rgb(255, 246, 208);
+    border: 1px black solid;
     grid-template-rows: 80px 500px;
+
 }
 
 .grid-item-1, .grid-item-2, .grid-item-3, .grid-item-4, .grid-item-5 {
-    border: 2px solid rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;
     text-align: center;
@@ -39,7 +41,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:#004063;
+    background-color: wheat;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -49,12 +51,38 @@ li {
 
 li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: #111;
+    transition: all .5s ease;
+    background-color : white;
+
+}
+
+.grid-item-4{
+    background-image: url("../img/andra_bilder/laura-college-K_Na5gCmh38-unsplash.jpg");
+    background-size: cover;
+}
+
+.grid-item-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10%;
+    margin: 0%;
+}
+
+.grid-item-3 {
+    background-image: url("../img/andra_bilder/jason-leung-poI7DelFiVA-unsplash.jpg");
+    background-size: auto;
+}
+
+.grid-item-1 {
+    background-image: url("../img/andra_bilder/julian-berengar-solter-EDNn9_TM4W0-unsplash.jpg");
+    color: aliceblue;
+    font-family: 'Noto Serif', serif;
 }
