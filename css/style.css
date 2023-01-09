@@ -94,7 +94,7 @@ li a:hover {
     font-size: xx-small;
 }
 
-.boxed {
+/*.boxed {
     display: flex;
     position: relative;
     max-width: 800px;
@@ -104,23 +104,75 @@ li a:hover {
     border: 2px solid rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.749);
     padding: 20px;
+}*/
+
+
+
+/*.maträtt1 { grid-area: maträtt1; }
+.maträtt2 { grid-area: maträtt2; }
+.maträtt3 { grid-area: maträtt3; }
+.maträtt4 { grid-area: maträtt4; }
+.maträtt5 { grid-area: maträtt5; }
+.maträtt6 { grid-area: maträtt6; }*/
+
+  .wrapper2 {
+    display: grid;
+    justify-content: space-evenly;
+    /*grid-template-areas: 
+    'maträtt1 maträtt1 maträtt2 maträtt2 maträtt3 maträtt3'
+    'maträtt4 maträtt4 maträtt5 maträtt5 maträtt6 maträtt6';
+    background-color: rgb(255, 246, 208);*/
+    border: 1px black solid;
+    grid-template-rows: 374px 374px;
+    grid-template-columns: 300px 300px 300px;
+    background-color: rgb(255, 246, 208);
+
+  }
+
+.maträtt1 {
+    background-image: url("../img/andra_bilder/david-v-zGeax2IzgVw-unsplash\ \(1\).jpg");
+    background-repeat: no-repeat;
+
 }
 
-.wrapper2 {
+.maträtt2 {
+    background-image: url("../img/andra_bilder/bruna-branco-t8hTmte4O_g-unsplash.jpg");
+    background-repeat: no-repeat;
 
 }
-.card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-  }
+
+.maträtt3 {
+    background-image: url("../img/andra_bilder/sahand-hoseini-BMVAYjPf6mU-unsplash.jpg");
+    background-repeat: no-repeat;
+
+}
   
-  /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  /* Add some padding inside the card container */
-  .container {
-    padding: 2px 16px;
-  }
+.maträtt4 {
+    background-image: url("../img/andra_bilder/nadine-primeau--ftWfohtjNw-unsplash.jpg");
+    background-repeat: no-repeat;
+
+}
+
+.maträtt5 {
+    background-image: url("../img/andra_bilder/victoria-shes-UC0HZdUitWY-unsplash.jpg");
+    background-repeat: no-repeat;
+
+}
+
+.maträtt6 {
+    background-image: url("../img/andra_bilder/vadim-markin-jR4PDHIuldA-unsplash.jpg");
+    background-repeat: no-repeat;
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    
+}
